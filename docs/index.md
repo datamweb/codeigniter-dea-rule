@@ -1,5 +1,6 @@
 ##  CodeIgniter DEA Rule
 [![PHPUnit](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/phpunit.yml/badge.svg)](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/phpunit.yml)
+[![Coverage Status](https://coveralls.io/repos/github/datamweb/codeigniter-dea-rule/badge.svg?branch=develop)](https://coveralls.io/github/datamweb/codeigniter-dea-rule?branch=develop)
 [![PHPStan](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/phpstan.yml/badge.svg)](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/phpstan.yml)
 [![Rector](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/rector.yml/badge.svg)](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/rector.yml)
 [![Psalm](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/psalm.yml/badge.svg)](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/psalm.yml)

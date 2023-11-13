@@ -94,6 +94,7 @@ return static function (RectorConfig $rectorConfig): void {
         TypedPropertyFromAssignsRector::class => [
             __DIR__ . '/src/Models/LogsTempEmailModel.php',
             __DIR__ . '/src/Commands/DEARulePublish.php',
+            __DIR__ . '/tests/_support/Config/Registrar.php',
         ],
     ]);
 
