@@ -1,0 +1,85 @@
+{
+    "name": "datamweb/codeiegniter-dea-rule",
+    "description": "Temporary & Disponsable Emails Validation In CodeIgniter4",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "codeigniter",
+        "temporary_email",
+        "disponsable_email",
+        "rule",
+        "validation"
+    ],
+    "authors": [
+        {
+            "name": "Pooya Parsa Dadashi",
+            "email": "Pooya_parsa_dadashi@yahoo.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/datamweb/codeiegniter-dea-rule",
+    "require": {
+        "php": "^7.4.3 || ^8.0"
+    },
+    "require-dev": {
+        "codeigniter4/devkit": "^1.0",
+        "codeigniter/phpstan-codeigniter": "^1.4",
+        "codeigniter4/framework": "^4.2.7",
+        "mikey179/vfsstream": "^1.6.7",
+        "mockery/mockery": "^1.0",
+        "rector/rector": "^0.18.6"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Datamweb\\CodeIgniterDEARule\\": "src"
+        },
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests",
+            "Tests\\Support\\": "tests/_support"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "bash admin/setup.sh"
+        ],
+        "analyze": [
+            "phpstan analyze",
+            "psalm",
+            "rector process --dry-run"
+        ],
+        "sa": "@analyze",
+        "ci": [
+            "Composer\\Config::disableProcessTimeout",
+            "@cs",
+            "@deduplicate",
+            "@inspect",
+            "@analyze",
+            "@test"
+        ],
+        "cs": "php-cs-fixer fix --ansi --verbose --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix --ansi --verbose --diff",
+        "deduplicate": "phpcpd src/",
+        "inspect": "deptrac analyze --cache-file=build/deptrac.cache",
+        "mutate": "infection --threads=2 --skip-initial-tests --coverage=build/phpunit",
+        "style": "@cs-fix",
+        "test": "phpunit"
+    },
+    "support": {
+        "forum": "https://github.com/datamweb/codeigniter-dea-rule/discussions",
+        "source": "https://github.com/datamweb/codeigniter-dea-rule",
+        "issues": "https://github.com/datamweb/codeigniter-dea-rule/issues",
+        "docs": "https://www.dea-rule.codeigniter4.ir"
+    }
+}
