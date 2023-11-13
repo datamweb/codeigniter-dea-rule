@@ -22,6 +22,5 @@ jobs:
         run: |
           pip3 install mkdocs-material
           pip3 install mkdocs-git-revision-date-localized-plugin
-          pip3 install mkdocs-redirects
       - name: Publish codeigniter DEA Rule Documentation
         run: mkdocs gh-deploy --force
