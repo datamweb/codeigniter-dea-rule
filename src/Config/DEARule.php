@@ -27,8 +27,8 @@ class DEARule
      */
     public array $filesBlacklisted = [
         'https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt',
-        //'https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/master/disposable_email_blocklist.conf',
-        //'https://gist.githubusercontent.com/saaiful/dd2b4b34a02171d7f9f0b979afe48f65/raw/2ad5590be72b69a51326b3e9d229f615e866f2e5/blocklist.txt',
+        // 'https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/master/disposable_email_blocklist.conf',
+        // 'https://gist.githubusercontent.com/saaiful/dd2b4b34a02171d7f9f0b979afe48f65/raw/2ad5590be72b69a51326b3e9d229f615e866f2e5/blocklist.txt',
 
         // APPPATH . 'myCustomDomainBlacklisted.txt',
     ];

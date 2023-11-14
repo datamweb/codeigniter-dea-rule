@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * This file is part of CodeIgniter4 GO TO PAY.
+ * This file is part of CodeIgniter-DEA-Rule.
  *
  * (c) 2023 Datamweb <pooya_parsa_dadashi@yahoo.com>
  *

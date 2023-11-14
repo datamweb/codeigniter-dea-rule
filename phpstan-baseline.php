@@ -2,9 +2,14 @@
 
 $ignoreErrors = [];
 
-// $ignoreErrors[] = [
-//     'message' => '#^Property Datamweb\\\\CodeIgniterDEARule\\\\Database\\\\Migrations\\\\LogsTempEmailMigration\\:\\:\\$attributes type has no value type specified in iterable type array\\.$#',
-//     'count' => 1,
-//     'path' => __DIR__ . '/src/Database/Migrations/2023-11-11-105553_LogsTempEmailMigration.php',
-// ];
+$ignoreErrors[] = [
+    'message' => '#^Property Tests\\\\Support\\\\Config\\\\Registrar\\:\\:\\$dbConfig type has no value type specified in iterable type array\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/tests/_support/Config/Registrar.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Tests\\\\Support\\\\Config\\\\Registrar\\:\\:Database\\(\\) return type has no value type specified in iterable type array\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/tests/_support/Config/Registrar.php',
+];
 return ['parameters' => ['ignoreErrors' => $ignoreErrors]];
