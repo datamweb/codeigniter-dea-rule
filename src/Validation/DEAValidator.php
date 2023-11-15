@@ -86,6 +86,8 @@ class DEAValidator
      * --------------------------------------------------------------------
      * This function checks whether the provided email is in the Disposable/Temporary  email category or not.
      * This function will merge all the database files together and perform a final check on the total list.
+     *
+     * @codeCoverageIgnore
      */
     private function checkMailIsTemporaryByFiles(string $domain): bool
     {
@@ -110,6 +112,8 @@ class DEAValidator
      * Insert Info For Any Try TEMP EMAIL
      * --------------------------------------------------------------------
      * This function records info(agent,ip,...) in the db for data analysis.
+     *
+     * @codeCoverageIgnore
      */
     private function insertToDB(string $email, string $filter_by): void
     {
@@ -131,6 +135,7 @@ class DEAValidator
 
     /**
      * @see https://codeigniter.com/user_guide/libraries/user_agent.html#example
+     * @codeCoverageIgnore
      */
     private function getDevice(): string
     {

@@ -16,9 +16,10 @@ namespace Tests\Models;
 use CodeIgniter\Config\Factories;
 use CodeIgniter\Test\CIUnitTestCase;
 use CodeIgniter\Test\DatabaseTestTrait;
-use CodeIgniter\Validation\ValidationInterface;
+use CodeIgniter\Validation\Validation;
 use Config\Services;
 use Datamweb\CodeIgniterDEARule\Config\DEARule;
+use Datamweb\CodeIgniterDEARule\Validation\DEAValidator;
 
 /**
  * @internal
@@ -37,12 +38,17 @@ final class LogsTempEmailModelTest extends CIUnitTestCase
      */
     protected $namespace = 'Datamweb\CodeIgniterDEARule';
 
-    private ValidationInterface $validation;
+    private Validation $validation;
+    private array $config = [
+        'ruleSets' => [
+            DEAValidator::class,
+        ],
+    ];
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->validation = Services::validation();
+        $this->validation = $this->validation = new Validation((object) $this->config, Services::renderer());
         $this->validation->reset();
     }
 
