@@ -21,7 +21,7 @@
 
 In this project, as much as possible, the *Code Quality Control Tools used by the Codeigniter4 Core Team* have been used.
 
-<p align="center"><img src="https://github.com/datamweb/my-repository-files/blob/main/codeigniter-dea-rule/image/demo.jpg" alt="CodeIgniter DEA Rule"></p>
+<p align="center"><img src="https://github.com/datamweb/my-repository-files/blob/main/codeigniter-dea-rule/image/demo.jpg?raw=true" alt="CodeIgniter DEA Rule"></p>
 
 
 ## Acknowledgements
