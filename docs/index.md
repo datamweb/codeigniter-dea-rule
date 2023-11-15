@@ -9,8 +9,7 @@
 [![Unused](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/unused.yml/badge.svg)](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/unused.yml)
 [![Deptrac](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/deptrac.yml/badge.svg)](https://github.com/datamweb/codeigniter-dea-rule/actions/workflows/deptrac.yml)
 
-
-<p align="center"><img src="https://github.com/datamweb/my-repository-files/blob/main/codeigniter-dea-rule/image/logo.png" alt="CodeIgniter DEA Rule"></p>
+<p align="center"><img src="https://github.com/datamweb/my-repository-files/blob/main/codeigniter-dea-rule/image/logo.png?raw=true" alt="CodeIgniter DEA Rule"></p>
 
 [![Latest Stable Version](http://poser.pugx.org/datamweb/codeigniter-dea-rule/v?style=for-the-badge)](https://packagist.org/packages/datamweb/codeigniter-dea-rule) [![Total Downloads](http://poser.pugx.org/datamweb/codeigniter-dea-rule/downloads?style=for-the-badge)](https://packagist.org/packages/datamweb/codeigniter-dea-rule) [![Latest Unstable Version](http://poser.pugx.org/datamweb/codeigniter-dea-rule/v/unstable?style=for-the-badge)](https://packagist.org/packages/datamweb/codeigniter-dea-rule) [![License](http://poser.pugx.org/datamweb/codeigniter-dea-rule/license?style=for-the-badge)](https://packagist.org/packages/datamweb/codeigniter-dea-rule) [![PHP Version Require](http://poser.pugx.org/datamweb/codeigniter-dea-rule/require/php?style=for-the-badge)](https://packagist.org/packages/datamweb/codeigniter-dea-rule)
 
