@@ -25,6 +25,12 @@ In this project, as much as possible, the *Code Quality Control Tools used by th
 
 <p align="center"><img src="https://github.com/datamweb/my-repository-files/blob/main/codeigniter-dea-rule/image/demo.jpg" alt="CodeIgniter DEA Rule"></p>
 
+## CodeIgniter DEA Rule Documentation
+
+The documentation includes how to install, setup and configure and how to use **`CodeIgniter DEA Rule`**. Click here to see the [docs](https://www.dea-rule.codeigniter4.ir/).
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
 
 ## Acknowledgements
 
