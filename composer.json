@@ -1,5 +1,5 @@
 {
-    "name": "datamweb/codeiegniter-dea-rule",
+    "name": "datamweb/codeigniter-dea-rule",
     "description": "Temporary & Disponsable Emails Validation In CodeIgniter4",
     "license": "MIT",
     "type": "library",
