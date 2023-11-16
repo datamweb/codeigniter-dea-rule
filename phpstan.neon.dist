@@ -1,0 +1,24 @@
+includes:
+	- phpstan-baseline.php
+parameters:
+	tmpDir: build/phpstan
+	level: 6
+	paths:
+		- src/
+		- tests/
+	bootstrapFiles:
+		- vendor/codeigniter4/framework/system/Test/bootstrap.php
+
+	universalObjectCratesClasses:
+		- CodeIgniter\Entity
+		- CodeIgniter\Entity\Entity
+		- Faker\Generator
+	scanDirectories:
+		- vendor/codeigniter4/framework/system/Helpers
+	dynamicConstantNames:
+		- APP_NAMESPACE
+		- CI_DEBUG
+		- ENVIRONMENT
+		- CodeIgniter\CodeIgniter::CI_VERSION
+	codeigniter:
+		checkArgumentTypeOfFactories: false
