@@ -17,7 +17,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/datamweb/codeiegniter-dea-rule",
+    "homepage": "https://github.com/datamweb/codeigniter-dea-rule",
     "require": {
         "php": "^7.4.3 || ^8.0"
     },
