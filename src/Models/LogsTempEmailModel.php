@@ -22,7 +22,7 @@ class LogsTempEmailModel extends Model
     protected $returnType = 'array';
 
     /**
-     * @var string[]
+     * @var list<string>
      */
     protected $allowedFields = [
         'email', 'try_url_string', 'ip_address', 'agent_string', 'device', 'platform', 'filter_by',
