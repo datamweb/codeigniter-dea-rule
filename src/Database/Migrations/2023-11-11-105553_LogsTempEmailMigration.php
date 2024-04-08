@@ -22,7 +22,7 @@ class LogsTempEmailMigration extends Migration
     private string $tableName;
 
     /**
-     * @var list<string>
+     * @var array<string, string>
      */
     private array $attributes;
 
