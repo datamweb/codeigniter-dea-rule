@@ -22,7 +22,7 @@ class DEARule
      * We use a large database to check temporary emails. However,
      * If you want to specifically identify the domain as Temporary Email, add it there.
      *
-     * @var string[]
+     * @var         list<string>
      * @phpstan-var list<string>
      */
     public array $filesBlacklisted = [
@@ -40,7 +40,7 @@ class DEARule
      * We use a large database to check temporary emails. However,
      * If you want to specifically identify the domain as Temporary Email, add it there.
      *
-     * @var string[]
+     * @var         list<string>
      * @phpstan-var list<string>
      */
     public array $domainBlacklisted = [
@@ -53,7 +53,7 @@ class DEARule
      * --------------------------------------------------------------------
      * The email added here will be considered valid anyway.
      *
-     * @var string[]
+     * @var         list<string>
      * @phpstan-var list<string>
      */
     public array $emailsWhiteListed = [

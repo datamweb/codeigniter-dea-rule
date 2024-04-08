@@ -63,7 +63,7 @@ final class DEAValidatorTest extends CIUnitTestCase
     }
 
     /**
-     * @return array<array<array<string, string>|bool>> $data
+     * @return list<list<array<string, string>|bool>> $data
      */
     public static function provideIsTempEmail(): iterable
     {
@@ -108,7 +108,7 @@ final class DEAValidatorTest extends CIUnitTestCase
     }
 
     /**
-     * @return array<array<array<string, string>|bool>> $data
+     * @return list<list<array<string, string>|bool>> $data
      */
     public static function provideIsTempEmailByMutiDBFiles(): iterable
     {
@@ -151,7 +151,7 @@ final class DEAValidatorTest extends CIUnitTestCase
     }
 
     /**
-     * @return array<array<array<string, string>|bool>> $data
+     * @return list<list<array<string, string>|bool>> $data
      */
     public static function provideIsTempEmailByDomainBlacklisted(): iterable
     {
@@ -190,7 +190,7 @@ final class DEAValidatorTest extends CIUnitTestCase
     }
 
     /**
-     * @return array<array<array<string, string>|bool>> $data
+     * @return list<list<array<string, string>|bool>> $data
      */
     public static function provideEmailIsDomainBlacklistedButEmailsWhiteListed(): iterable
     {

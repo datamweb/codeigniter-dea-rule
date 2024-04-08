@@ -23,7 +23,7 @@ class Registrar
      * --------------------------------------------------------------------------
      * Register the `is-temp-email` rule for used like CI4 rules.
      *
-     * @return array<string, array<class-string<DEAValidator>>>
+     * @return array<string, list<class-string<DEAValidator>>>
      */
     public static function Validation(): array
     {
