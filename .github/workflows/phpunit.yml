@@ -17,7 +17,12 @@ on:
       - 'composer.*'
       - 'phpunit*'
       - '.github/workflows/phpunit.yml'
-
+env:
+  NLS_LANG: 'AMERICAN_AMERICA.UTF8'
+  NLS_DATE_FORMAT: 'YYYY-MM-DD HH24:MI:SS'
+  NLS_TIMESTAMP_FORMAT: 'YYYY-MM-DD HH24:MI:SS'
+  NLS_TIMESTAMP_TZ_FORMAT: 'YYYY-MM-DD HH24:MI:SS'
+  
 jobs:
   main:
     name: PHP ${{ matrix.php-versions }} - ${{ matrix.db-platforms }} - ${{ matrix.dependencies }}
@@ -105,10 +110,6 @@ jobs:
       - name: Create database for MSSQL Server
         if: matrix.db-platforms == 'SQLSRV'
         run: sqlcmd -S 127.0.0.1 -U sa -P 1Secure*Password1 -Q "CREATE DATABASE test"
-
-      - name: Create database for Oracle Database
-        if: matrix.db-platforms == 'OCI8'
-        run: echo -e "ALTER SESSION SET CONTAINER = XEPDB1;\nCREATE BIGFILE TABLESPACE \"TEST\" DATAFILE '/opt/oracle/product/18c/dbhomeXE/dbs/TEST' SIZE 10M AUTOEXTEND ON MAXSIZE UNLIMITED SEGMENT SPACE MANAGEMENT AUTO EXTENT MANAGEMENT LOCAL AUTOALLOCATE;\nCREATE USER \"ORACLE\" IDENTIFIED BY \"ORACLE\" DEFAULT TABLESPACE \"TEST\" TEMPORARY TABLESPACE TEMP QUOTA UNLIMITED ON \"TEST\";\nGRANT CONNECT,RESOURCE TO \"ORACLE\";\nexit;" | /lib/oracle/18.5/client64/bin/sqlplus -s sys/Oracle18@localhost:1521/XE as sysdba
 
       - name: Checkout
         uses: actions/checkout@v4
