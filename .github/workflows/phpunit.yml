@@ -53,7 +53,7 @@ jobs:
           # OCI8
           - php-versions: '7.4'
             db-platforms: OCI8
-            mysql-versions: '5.7'
+            mysql-versions: '8.0'
             dependencies: 'highest'
 
     services:
