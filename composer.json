@@ -28,7 +28,7 @@
         "mikey179/vfsstream": "^1.6.7",
         "mockery/mockery": "^1.0",
         "phpunit/phpunit": "^9.6",
-        "rector/rector": "1.2.8"
+        "rector/rector": "1.2.9"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
